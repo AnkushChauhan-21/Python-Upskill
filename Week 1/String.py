@@ -9,7 +9,11 @@ message_with_quote = 'It\'s a beautiful day!'
 message_with_double_quotes = "It's a beautiful day!"
 
 #we can also use triple quotes to add multiple lines in our string
-message_with_triple_quotes = """Using triple quote we can add multiple lines like this in our string and the triple quotes can be either single or double quotes"""
+message_with_triple_quotes = """Using triple quote we can add multiple lines 
+like this in our string and
+ the triple quotes can be either 
+ single 
+ or double quotes"""
 
 #printing all the variables
 print(message)
