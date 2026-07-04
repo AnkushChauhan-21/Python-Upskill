@@ -43,3 +43,9 @@ print(message[6:10])#prints from 6 index to 9 index
 
 print(message[-11:-1]) #prints from -11 index to -1 as the ending is exclusive 
 
+
+print("\n---string slicing with step---")
+print(message[0:11:2]) #prints the characters from index 0 to 10 with a step of 2
+print(message[0:11:3]) #prints the characters from index 0 to 10 with a step of 3
+print(message[-1:-12:-1]) #prints the charcters from -1 index to -11 with a step of -1 which means it will print the character in the reverse order
+print(message[-1:-12:-3]) #prints the charcters from -1 index to -11 with a step of -3 which means it will print the character in the reverse order
