@@ -73,3 +73,33 @@ print(check.isalpha()) #checks if all the characters in the string are alphabets
 print(message.isdigit()) #checks if all the characters in the string are digits and returns True or False
 print(message.isalnum()) #checks if all the characters in the string are alphanumeric and returns True or False
 print(message.index('o')) #prints the index of the first occurrence of the character 'o' in the string and raises an error if the character is not found
+
+
+print("\n---Immutability in Strings---")
+#Strings are immutable which means we cannot change the charactera in the string once it is created.We can only create a new string with the chanages we want
+orignal_string = "hello python" #the original string is created
+modified_string = orignal_string.replace('python','world') 
+print("Original String:",orignal_string) #prints the original string and the string is unchanged 
+print("modified_string" , modified_string) #prints the new string with the changes we made
+
+
+print("\n---String Concatenation and repetition ---")
+#String Concatentation
+greetings = "Hello"
+name = "ankush"
+message = greetings + " , "  + "Master " + name + " Welcome!"
+message2 = '{} , master {} Welcome!'.format(greetings,name)
+message3 = f'{greetings} , master {name} Welcome!' 
+
+#we can only concatenate strings with strings and not with other data types like int,float etc.
+print(message)
+print(message2)
+print(message3)
+
+#repetition
+repeat_this = "power " * 3 # repeats the string 3 times
+print(repeat_this) #prints the string 3 times
+
+print(dir(str)) #prints all the methods available for the string class
+#print(help(str)) #prints the documentation for the string class and its methods like what they actually do and how to use them
+#print(help(str.upper)) #prints the documentation for the upper method of the string class and how to use it 
