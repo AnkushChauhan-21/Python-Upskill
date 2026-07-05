@@ -53,3 +53,23 @@ print(message[0:11:2]) #prints the characters from index 0 to 10 with a step of 
 print(message[0:11:3]) #prints the characters from index 0 to 10 with a step of 3
 print(message[-1:-12:-1]) #prints the charcters from -1 index to -11 with a step of -1 which means it will print the character in the reverse order
 print(message[-1:-12:-3]) #prints the charcters from -1 index to -11 with a step of -3 which means it will print the character in the reverse order
+
+
+print("\n---String Methods---")
+print(message.upper()) #prints the string in upper case
+print(message.lower()) #prints the string in lower case
+print(message.count('o')) #prints the count of the character 'o' in the string
+print(message.find('o')) #prints the index of the first occurrence of the character 'o' in the string
+message_new = message.replace('World','Python') #replaces the word 'world' with 'Python' in the string
+print(message_new) #prints the new string after replacing the word 'world' with 'Python'
+print(message.split(' ')) #splits the string into a list of words based on the space character
+print(message.startswith("Hello")) #checks if the string starts with the word with "Hello" and returns True or False
+print(message.endswith("World")) #checks if the string ends with the word "World" and returns True or False
+print(message.capitalize()) #capitalizes the first character of the string
+print(message.title()) #Title case the string which means it will capitalize the first character of each word in the string
+print(message.strip()) #removes the leading and trailing whitespaces from the string
+check = "alphabets"
+print(check.isalpha()) #checks if all the characters in the string are alphabets and returns True or False
+print(message.isdigit()) #checks if all the characters in the string are digits and returns True or False
+print(message.isalnum()) #checks if all the characters in the string are alphanumeric and returns True or False
+print(message.index('o')) #prints the index of the first occurrence of the character 'o' in the string and raises an error if the character is not found
