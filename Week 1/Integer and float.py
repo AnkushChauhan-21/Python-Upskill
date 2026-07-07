@@ -20,3 +20,27 @@ print("Division : ", a/b)   #Division(float Result)
 print("Floor Division : " ,)  #Division(integer Result)
 print("Modulus :  ",a%b)  #Modulus (give remainder of the Division)
 print("Exponent : ", c**d)  #Exponent (gives the power of the number)
+
+
+#Short hand operators
+print("\n---Short hand operators---")
+x = 6 
+print("original value of x is : ", x)
+
+x += 1  #x = x +1
+print("After x +=1 the value of x is : ",x)
+
+x -= 2 # x = x -1 
+print("After x =-1 the value of x is :", x)
+
+x *= 3 #x = x * 3
+print("After x *=3 the value of x is :",x)
+
+x /= 3 #x =x / 3
+print("After x /=3 the value of x is : ", x)
+
+x **= 2 #x = x **2
+print("After x **=2 the value of x is : ", x)
+
+
+
