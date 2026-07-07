@@ -43,4 +43,33 @@ x **= 2 #x = x **2
 print("After x **=2 the value of x is : ", x)
 
 
+#Comparison operators
+print("\n---Comparison Operators---")
 
+p = 23
+q = 10
+
+print("p == q : ", p == q ) #Equal to
+print("p != q : ", p != q ) # not Equal to
+print("p > q : ", p > q ) #greater than
+print("p < q : ", p < q ) #Less than
+print("p >= q : ", p >= q ) #greater than or equal to 
+print("p <= q : ", p <= q ) # Less than or equal to
+
+
+#Type conversion
+print("\n---Type Conversion---")
+
+int_digit = 10
+float_digit = 4.4
+string_digit = "7"
+
+print("Integer to Float : ",float(int_digit)) #Integer to Float
+print("Float to Integer : ",int(float_digit)) #float to Intger
+print("String to Integer : ",int(string_digit))  #String to Integer
+print("String to float : ",float(string_digit))  #String to float
+print("Integer to string : ",str(int_digit))  #Integer to string
+print("Float to string : ",str(float_digit)) # Float to string
+
+
+#warning / Note = Converting the non-numeric strings to numbers will raise an error
