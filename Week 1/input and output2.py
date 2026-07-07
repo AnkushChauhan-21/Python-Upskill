@@ -39,7 +39,7 @@ print("Printing the len() function",len)
 #separate and end parameters
 print("\n---separate and end parameters---")
 print("This","how","we",'seprate', sep="+") #custom separator
-print(" I am gonna end this line with ",end="((()))\n")
+print(" I am gonna end this line with ",end="((()))\n") #custom end character
 print("That was fun ending")
 
 
