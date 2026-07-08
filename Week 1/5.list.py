@@ -56,3 +56,52 @@ print("\nprinting the sorted list : ",num)
 num.sort(reverse=True)          # sorts the list in the desceding order
 print("\n printing the list in descending order : ",num)
 
+
+
+# All the sorting methods and functions return none and change/modify the list in the place
+new_sort = sorted(num)      # Using the sorted() function here
+print("\nprinting the new sorted list here : ",new_sort)
+print("\nprinting the original sorted list here : ",num)
+
+
+print("\nprinting the maximum number : ",max(num))   # Gives the Maximum Value
+print("\nprinting the mininum number : ",min(num))   # Gives the mininum Value
+print("\nprinting the sum of  numbers : ",sum(num))   # Gives the sum of all numbers
+print("\nprinting the index of : ",num.index(89))     # Gives the index number 
+print("\nprinting the count of : ",num.count(7))      # Gives the number of counts 
+print("\n Is 400 in the num List? : ", '400' in num)  # tell us if its present or not in the list by giving the boolean value True or False
+
+
+
+# Iterating Through the list 
+print("\n Iterating through the num")
+for number in num:
+    print(number,end="-")
+
+
+
+
+print("\n Enumerating num with index")
+for index , number in enumerate(num):
+    print(f"\nIndex {index} : Numbers {number}")
+
+
+
+
+print("\n Enumerating num with custom index start number")
+for index , number in enumerate(num , start=3):
+    print(f"\nIndex {index} : Numbers {number}")
+
+
+
+# Joining the spliting lists
+numi = [ "list" , "power" , "fame" , "extra words"]
+join_numi = ", ".join(numi)
+print("\n Joined the num list ",join_numi)
+
+
+split_numi = join_numi.split(' , ')
+print("\n splitng the numi list ",split_numi)
+
+
+
