@@ -105,3 +105,7 @@ print("\n splitng the numi list ",split_numi)
 
 
 
+# how to create an empty list 
+
+lt = []
+print(type(lt))
