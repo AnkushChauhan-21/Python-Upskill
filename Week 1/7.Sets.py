@@ -45,6 +45,33 @@ print("\nsymmetric difference--- : ",comp_science_courses.symmetric_difference(c
 
 
 
+# checking the membership of the elements in the sets
+print("\nIs 'Sanskrit' in courses : ", "Sanskrit" in courses)
+print("\nIs 'Hindi' in courses : ", "Hindi" in courses)
 
+
+
+# Set Comprehension
+Sqr_num = {x**2 for x in range(1,6) }
+print("\n the sqaure roots of the range : ",Sqr_num)
+
+
+
+#Frozen set(immutable sets)
+frozenset = frozenset(["maths" , "chemistry", "Biology", "Hindi"])
+print("\n printing the frozen sets : ",frozenset)
+# frozenset.add("english") # it will show error as it is immutable and we cant add an element in it 
+print("\n is maths in the frozenset : ", "maths" in frozenset)
+
+
+# how to create empty list , tuple and set
+
+empty_list = []  # only using [] this creates the empty list and list() do the same thing
+empty_tuple = () # using () creates the empty tuple and tuple() also do the same things
+empty_set = set()  # warning we cant use the {} beacuse it is use to create the empty dictionary which i will learn in next file
+
+print("\n---empty list--: ",type(empty_list))
+print("\n---empty tuple--: ",type(empty_tuple))
+print("\n---empty set---: ", type(empty_set))
 
 
