@@ -41,3 +41,9 @@ def multi(*args):
 print(f"multiplication results are : {multi(2,3,6,7,10)}",end="\n")
 print(f"multiplication results are : {multi(10,10,2)}",end="\n")
 
+
+# lamba function (Anonymus function)
+sqaure = lambda x:x * x 
+print(f"the sqaure of {sqaure(5)}")
+print(f"the sqaure of {sqaure(6)}")
+print(f"the sqaure of {sqaure(12)}")
