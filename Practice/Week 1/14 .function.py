@@ -50,3 +50,6 @@ print(f"the sqaure of {sqaure(12)}")
 
 
 print("\n printing for the vs code in the github")
+
+
+print("\n i hate coffee")
