@@ -47,3 +47,6 @@ sqaure = lambda x:x * x
 print(f"the sqaure of {sqaure(5)}")
 print(f"the sqaure of {sqaure(6)}")
 print(f"the sqaure of {sqaure(12)}")
+
+
+print("\n printing for the vs code in the github")
