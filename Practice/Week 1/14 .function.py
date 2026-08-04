@@ -49,7 +49,60 @@ print(f"the sqaure of {sqaure(6)}")
 print(f"the sqaure of {sqaure(12)}")
 
 
-print("\n printing for the vs code in the github")
+# Nested functions here with an example
+def outer_function(text):
+    def inner_function():
+        return text.upper()
+        return inner_function()
+print(outer_function("hello world i am a pyhton code"))
+print(outer_function("world"),end = '\n\n')# this will print hello world in upper case
 
 
-print("\n i hate coffee")
+#Recursive function here with an example
+print("\n---printing the recursive function here---")
+n = int(input("enter the number to find the factorialof it here :  "))
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+    
+print(f"the factorial of {n} is {factorial(n)}")
+print(f"the factorial of {n}  is {factorial(n)},end = '\n\n'")
+
+
+# function annotation
+def greet(name:str) -> str:
+    return f"Hello Dear ,{name} how are you doing today???^_^"
+print(greet("Ankush"))
+print(greet("Rohan"),end = '\n\n')
+
+
+# Higher order function
+print("\n-- printing the higher order function here---")
+# This function takes another function as an argument and returns a new function as a result.
+def apply_function(func, value):
+    return func(value)
+print(apply_function(lambda x: x * 2, 5))
+print(apply_function(lambda  x: x + 10, 5), end = '\n\n')
+
+
+
+# keywords arguments here with an example
+print("\n--- printing the keyword argunments here---")
+
+def student_details(name,age,grade):
+    print(f"Mr/Mrs {name} is {age} years old and he/she is in grade {grade}")
+student_details(name='Ankush',age = 21 , grade = "A")
+student_details(name='Ankur',age = 23 , grade = "B")
+
+
+
+# Lets try the doc string with an example here
+def add_numbers(a,b):
+    #this function takes two numbers as input and returns their sum>
+    return a + b
+print(add_numbers(5,0))
+print(add_numbers.__doc__) # this will print the doc string of the function add_numbers
+print(add_numbers,end = '\n\n') # this will print the function object location
+                
