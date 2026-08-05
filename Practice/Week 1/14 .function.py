@@ -105,4 +105,37 @@ def add_numbers(a,b):
 print(add_numbers(5,0))
 print(add_numbers.__doc__) # this will print the doc string of the function add_numbers
 print(add_numbers,end = '\n\n') # this will print the function object location
-                
+
+
+# variable scope with an example here
+x = 10  # global variable 
+def modify_variable():
+    global x # this will tell the function to use the global variable x instead of creating a new local variable with the same name 
+    x = 20 # this will modify the global variable x to 20
+    print(f"inside the function the value of x is , x = {x}") 
+modify_variable()               
+print(f"outside the function the value of x is , x = {x}")
+
+# lets talk about kwargs and args with an example here
+# *args = it allows a function to accept any number of positional arguments as a tuple.
+# *kwargs = it allows a function to accept any number of keyword arguments as a dictionary
+# positonal arguments = these are the arguments that are passed to a function in a specific order. The order of the arguments matters and they are assigned to the parameters in the same oder as they are passed.
+# keywords arguments = arguments that are passed to a function by explicitly naming each parameter and its corresponding value.
+print("\n--- printing the args and kwargs here---")
+def fun_with_args_kwargs(*args, **kwargs):
+    print("positional arguments args: ", args)
+    print("keyword arguments kwargs: ", kwargs, end = '\n\n')
+
+fun_with_args_kwargs('a' , 'b', key1 = "value1" , key2 = "value2")
+fun_with_args_kwargs(1,2,3, name  = "Ankush" , age  = 21)
+
+
+course = [ "C++" , "DSA" , "Log" ,"time complexity"]
+info = {
+    "name" : "Ankush",
+    "age"  : 21 ,
+    "grade" : "A" 
+
+}
+
+fun_with_args_kwargs(*course , **info)
