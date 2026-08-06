@@ -12,4 +12,24 @@ print(f"so the sum of {num1} and {num2} is {sum}")
 print(f"so the multiplication of {num1} and {num2} is {multi}")
 print(f"so the division of the {num1} and {num2} is {division}")
 
-print(--task 3 ----)
+print("--task 3 ----")
+list_of_names = input("enter the names here please with ',' : ")
+names = list_of_names.split(',')
+print("Lets print all the names with appropriate gap between them here : ",names)
+
+print("--Task 4---")
+Age_verification = int(input("enter the age here to check the eligibilty for yourself (e.g: 18 or any number no flaot) : "))
+if Age_verification >= 18:
+    print("You are an adult and can do the voting")
+else:
+    print("You are not eligible for the voting here")
+
+
+print("--task 5---")
+pi = 3.14159
+print(f"print only till 2 decimals of pi : {pi:.2f} \n ")
+
+
+pin = float(input("enter any flaot number with more digits : "))
+print(f"print only till 2 decimals of pi : {pin:.2f}")
+    
