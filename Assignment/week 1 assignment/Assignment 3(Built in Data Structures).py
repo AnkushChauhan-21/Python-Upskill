@@ -107,3 +107,19 @@ dict = {
 poop = dict.pop("city")
 print("lets print the dict now we have poped out the city : ",dict)
 print("printing the pop element too side by side : ",poop)
+
+
+
+
+print("\n-----Task 13----\n")
+d1 = {"name" : "ankush" ,
+    "age"  : 21}
+d2 = {"Gender"  : "Male",
+      "number" : 5246275627}
+
+d3 = {**d1 , **d2}
+print("d1 : ",d1)
+print("d2 : ",d2)
+print("d3 : ",d3)
+
+
