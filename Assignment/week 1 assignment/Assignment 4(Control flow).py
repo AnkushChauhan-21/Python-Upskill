@@ -55,6 +55,72 @@ for i in range(len):
             pair.append(num[j])
 
 print("the value pair who is equal to the 9 is : ",pair)
+
+
+# Task 5 
+print("\n---- Task 5 -------")
+i = 1
+while i<=20:
+    if i%2 == 0:
+        print("The number is even : ", i)
+    i+=1
+
+
+
+# Task 6
+print("\n------ Task 6 -----")
+numbers = [34,345,7,834,234,848,956,23]
+searching_num = 23
+for num in numbers:
+    if(num==searching_num):
+        print(f"The {searching_num} has been matched and founded here")
+        break
+
+else:
+    print(f"The {searching_num} has not been found and the code is terminating now")
+
+
+
+
+# Task 7
+print("\n--- Task 7 -----\n")
+for i in range(1,11):
+    if i % 2 == 0:
+        continue
+    print (i)
+    i+=1
+
+
+# Task 8
+print("\n----- Task 8-----")
+for i in range(5):
+    if i == 3:
+        pass
+    print(i)
+
+
+
+
+# Task 9
+print("\n-------- Task 9-----------\n")
+def type_of_day(day):
+    match day.lower():
+        case "saturday" | "sunday":
+            return "weekend"
+        case "monday" | "tuesday" | "wednesday" | "thrusday" | "friday":
+            return "weekdays"
+        case _:
+            return("Invalid day has been input")
+
+print(type_of_day(input("enter the day you wanna know the type of  : ")))
+           
+
+
+
+
+        
+      
+
         
 
                     
