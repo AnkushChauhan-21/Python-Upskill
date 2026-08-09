@@ -40,4 +40,13 @@ print("lets print the key and value pairs in the dict_comp  : ",dict_way)
 
 
 
-# 
+# Task 6
+print("\n----- Task 6 ------\n")
+dic = {
+    "Ankush" : 78,
+    "aman" : 89,
+    "rahul" : 90
+}
+below_80 = {name : mark for name , mark in dic.items() if mark < 80}
+print("The Original dictionaries : ",dic)
+print("The Below_80 : ",below_80)
