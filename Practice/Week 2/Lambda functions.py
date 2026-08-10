@@ -60,3 +60,9 @@ print("The Original list : ",Num)
 # without intializing the accumulator
 sum = reduce(lambda x,y: x + y,Num)
 print(sum)
+
+
+
+# with initializing the accumulator
+sum2 = reduce(lambda x,y: x + y,Num,10)
+print(sum2)
