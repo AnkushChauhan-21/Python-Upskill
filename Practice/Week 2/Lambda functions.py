@@ -66,3 +66,28 @@ print(sum)
 # with initializing the accumulator
 sum2 = reduce(lambda x,y: x + y,Num,10)
 print(sum2)
+
+
+
+# with if else 
+demo = [1,2,3,4,5,6,7,8]
+sum3 = reduce(lambda x,y:x+y if y % 2==0 else x ,demo, 0)
+print(sum3)
+
+
+
+
+# Sort function 
+# Sort() function is used to sort the iterables
+# It retuns the new sorted list and does not modify the  original list
+# Syntax : sorted(iterables , key=function)
+print("\n----- sort function------\n")
+details =[(1,"a" , "zello") , (2,"a","python") , (3 , "a","keep up")]
+print("\n The Original list is : \n",details )
+sortt = sorted(details , key = lambda x: x[1]) #sorted  by the second element of the tuple
+print(sortt)
+rev_sort = sorted(details,key = lambda x: x[1] , reverse=True) #sorted by the second element of the tuple but in descending order
+print(rev_sort)
+merge_sort =sorted(details,key=lambda x: x[1]+x[2])
+print(merge_sort)
+
