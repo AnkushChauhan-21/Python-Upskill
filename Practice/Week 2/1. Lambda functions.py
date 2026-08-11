@@ -79,7 +79,9 @@ print(sum3)
 
 # Sort function 
 # Sort() function is used to sort the iterables
-# It retuns the new sorted list and does not modify the  original list
+# # It returns None and modifies the list in place.
+# If reverse=True is passed, the list is sorted in descending order.
+# If key=function is passed, the list is sorted by the function.
 # Syntax : sorted(iterables , key=function)
 print("\n----- sort function------\n")
 details =[(1,"a" , "zello") , (2,"a","python") , (3 , "a","keep up")]
