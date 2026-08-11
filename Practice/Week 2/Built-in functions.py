@@ -26,5 +26,9 @@ print("All strings are non-empty : ",all(string))
 print("At least one string is non empty : ",any(string))
 
 
-#
+#Useful when used with logical Conditions
+ages = [0, 25, 18, 30, 27]
+print(ages)
+print("All age are above 25 : " ,all(age >= 18  for age in ages))
+print("At least one is above 25 : ",any(age >=25 for age in ages))
 
