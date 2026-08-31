@@ -20,4 +20,22 @@ try:
 except IndexError as ie:
     print(f"The Error is {ie}")
 
-    
+# Task 3 
+print("\n------- Task 3---------\n")
+def take_input(a,b):
+    try:
+        result1=a/b
+    except ZeroDivisionError as ze:
+        print(f"The Error is {ze}")
+    except TypeError as typ:
+        print(f"The error is {typ}")
+    else:
+        print(f"The result is {result1}")
+   
+
+try:
+
+   take_input(1,0)
+   take_input(1,"a")
+finally:
+    print("The execution is done here")
