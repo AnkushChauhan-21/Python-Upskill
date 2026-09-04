@@ -79,3 +79,57 @@ class Book_Details:
 book1 = Book_Details.from_string("The Great Gatsby , F .Scott Fitzgerald")
 print("Book Title : ",book1.Title)
 print("Book Author : ",book1.Author)
+
+
+
+
+# Task 4
+print("\n ---- Task 4 ----\n")
+
+class Animal:
+    def sound(self):
+        raise NotImplementedError("Subclasses must implement the sound method")
+
+class Dog(Animal):
+    def sound(self):
+        return "Woof!!! Woof!!!"
+
+class cat(Animal):
+    def sound(self):
+        return "Meow!!! Meow!!!"
+
+class duck(Animal):
+    def wisdom(self):
+        return "hitler speech in background!!1"
+
+labrador = Dog()
+marry = cat()
+print("How Labrador sound like : ",labrador.sound())
+print("How marry sound like : ",marry.sound())
+
+
+
+
+# Task 5
+print("\n ---- Task 5 ----\n")
+
+class Walking():
+    def walk(self):
+        return "I have legs"
+
+class swimming():
+    def swim(self):
+        return "I can swim in water"
+
+class duck1(Walking,swimming,Animal):
+    def Quack(self):
+        return "sike Quack!!! Quack!!!"
+
+
+
+Holy_Duck = duck1() 
+wisodm = duck()
+print("Can Holy Duck walk : ",Holy_Duck.walk())
+print("Can Holy Duck Swim : " , Holy_Duck.swim())
+print("Can Holy Duck Quack : ",Holy_Duck.Quack())
+print("Share some wisdom holy duck : ",wisodm.wisdom())
